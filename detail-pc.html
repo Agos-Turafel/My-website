@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PC Gaming</title>
+    <style>
+        body {
+            font-family: 'Segoe UI','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            background-color: black;
+            color: white;
+            line-height: 1.6;
+        }
+        head {
+            background-color: gray;
+            padding: 15px;
+            box-shadow: 0 2px 4px gray;
+            text-align: center;
+        }
+        header h1 {
+            color: white;
+            font-size: 1.5cm;
+            margin: 0;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            display: black;
+            transition: color 0.3s;
+            font-weight: bold;
+        }
+        nav ul a:hover {
+            color: gray;
+        }
+        main {
+            padding: 40px 20px;
+            max-width: 900px;
+            margin: 30px auto;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 10px 20px rgb(255, 255, 255);
+            background-color: black;
+            color: white;
+        }
+        h2 {
+            color: white;
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 2px solid gray;
+            padding-bottom: 10px;
+        }
+        button {
+            background-color: cyan;
+            color: white;
+            border: none;
+            padding: 10px 25px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: lem;
+        }
+        button:hover {
+            background-color: rgb(128, 128, 128);
+        }
+        footer {
+            background-color: rgb(128, 128, 128);
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1> Sutakorn IT</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">หน้าหลัก</a></li>
+                <li><a href="product.html">สินค้า</a></li>
+                <li><a href="about.html">เกี่ยวกับเรา</a></li>
+                <li><a href="contact.html">ติดต่อ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>PC Gaming สเปคสูง (รุ่น Titan)</h2>
+        <p>คอมพิวเตอร์ตั้งโต๊ะระดับเรือธง สเปค : Core i9, RTX 4090, RAM 128GB.</p>
+        <h3 style="text-align: left;">คุณสมบัติเด่น</h3>
+        <ul style="text-align: left;">
+            <li>ประสิทธิภาพสูงสุดสําหรับเกม 4k</li>
+            <li>ระบบระบายความร้อนด้วยนํ้าขั้นสูง</li>
+            <li>รับประกัน 3 ปีเต็ม</li>
+        </ul>
+        <p class="price">ราคา : 85,000 บาท</p>
+        <button id="add-to-cart">เพิ่มในตะกร้า</button>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Sutakorn IT. All right reserved. Design by Sutakorn Janthorn</p>
+    </footer>
+
+    <script>
+        const cartButton = document.getElementById('add-to-cart');
+        cartButton.addEventListener('click',function(){
+            alert('PC Gaming ถูกเพิ่มเข้าตะกร้าแล้ว!');
+            cartButton.textContent = 'อยู่ในตะกร้าแล้ว';
+            cartButton.style.background = 'gray';
+        });
+    </script>
+</body>
+</html>
